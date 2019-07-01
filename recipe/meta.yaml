@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pysal/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 815c3d2ede32fe9bbf1654160e22b1984385bbe5f6c231b927870ae494c9957c
+  sha256: fd608348083ddb623db7c7f932ae732bd3cf92f407026e306aef18d3b8c94754
  
 build:
   noarch: python
