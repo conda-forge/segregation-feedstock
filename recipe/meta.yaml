@@ -1,18 +1,17 @@
-{% set name = "segregation" %}
 {% set version = "1.1.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: segregation
   version: {{ version }}
 
 source:
-  url: https://github.com/pysal/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/pysal/segregation/archive/{{ version }}.tar.gz
   sha256: 3bc42f5365f20426f56e1081d0e8d8dc1251c8b864116696bfc8658058999e60
  
 build:
-  noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
