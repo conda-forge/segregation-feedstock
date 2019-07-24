@@ -27,6 +27,9 @@ requirements:
     - numpy
     - scipy
     - libpysal
+    - tqdm
+    # FIXME: workaround until we rebuild gdal
+    - zstd
 
 test:
   imports:
