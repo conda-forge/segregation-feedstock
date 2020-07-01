@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: segregation
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/pysal/segregation/archive/v{{ version }}.tar.gz
-  sha256: 2df6d529dbf960edb4930511f20c94209167970a88074800fadcb2d6f9023553
- 
+  sha256: 5a2e67c95183ef6324454bfe69a18737288df451a8ce8cccc1cec092064767e4
+
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -40,7 +40,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Segregation Measures Framework in PySAL'
+  summary: Segregation Measures Framework in PySAL
 
   description: |
     The PySAL segregation module allow users to estimate several segregation measures and perform 
