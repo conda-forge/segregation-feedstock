@@ -5,9 +5,13 @@ Home: https://pysal.org
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/segregation-feedstock/blob/master/LICENSE.txt)
 
 Summary: Segregation Measures Framework in PySAL
+
+Development: https://github.com/pysal/segregation
+
+Documentation: http://segregation.readthedocs.io/
 
 The PySAL segregation module allow users to estimate several segregation measures and perform
 inference for single measures and comparative inference in a concise way.
