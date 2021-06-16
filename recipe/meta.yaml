@@ -30,6 +30,8 @@ requirements:
     - tqdm
     # FIXME: workaround until we rebuild gdal
     - zstd
+    - deprecation
+    - pyproj
 
 test:
   imports:
