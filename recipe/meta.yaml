@@ -1,4 +1,4 @@
-{% set version = "1.5.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: segregation
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pysal/segregation/archive/v{{ version }}.tar.gz
-  sha256: f0a06f9f1ca3772686a6d14f69ee1113236679a41e3ea5f3cea2e5e33afb6e5c
+  sha256: 1a3054007527e53a90e3230f0af0a85909a1a5e3a5d18f9af7ffb731ec7f8616
 
 build:
   number: 0
@@ -30,6 +30,8 @@ requirements:
     - tqdm
     # FIXME: workaround until we rebuild gdal
     - zstd
+    - deprecation
+    - pyproj
 
 test:
   imports:
