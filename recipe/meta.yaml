@@ -28,8 +28,9 @@ requirements:
     - scipy
     - libpysal
     - tqdm
-    # FIXME: workaround until we rebuild gdal
-    - zstd
+    - numba
+    - joblib
+    - rvlib >=0.0.5
     - deprecation
     - pyproj
 
