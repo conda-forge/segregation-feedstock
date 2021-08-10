@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: segregation
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pysal/segregation/archive/v{{ version }}.tar.gz
-  sha256: 1a3054007527e53a90e3230f0af0a85909a1a5e3a5d18f9af7ffb731ec7f8616
+  sha256: 0675a429b44497d3ddfa455a3ae9c6d441c3adb3c316b9592b7ea2125942b5ce
 
 build:
   number: 0
@@ -28,8 +28,9 @@ requirements:
     - scipy
     - libpysal
     - tqdm
-    # FIXME: workaround until we rebuild gdal
-    - zstd
+    - numba
+    - joblib
+    - rvlib >=0.0.5
     - deprecation
     - pyproj
 
