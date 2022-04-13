@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.2.3" %}
 
 package:
   name: segregation
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pysal/segregation/archive/v{{ version }}.tar.gz
-  sha256: 0675a429b44497d3ddfa455a3ae9c6d441c3adb3c316b9592b7ea2125942b5ce
+  sha256: 46d70a72044b629665ef57eeda005d6ec92910f0efd7f0e02ad2b405f4f029f5
 
 build:
   number: 0
