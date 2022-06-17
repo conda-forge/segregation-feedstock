@@ -32,7 +32,7 @@ requirements:
     - joblib
     - rvlib >=0.0.5
     - deprecation
-    - pyproj
+    - pyproj >=3
 
 test:
   imports:
