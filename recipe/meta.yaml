@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/pysal/segregation/archive/v{{ version }}.tar.gz
-  sha256: 46d70a72044b629665ef57eeda005d6ec92910f0efd7f0e02ad2b405f4f029f5
+  sha256: 658cfa34610b1f486f894d4a42e3d74aae7984e368e27c8c9ea420cdf76ad0b8
 
 build:
   number: 0
