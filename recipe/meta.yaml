@@ -1,12 +1,12 @@
-{% set version = "2.1.0" %}
+{% set version = "2.3" %}
 
 package:
   name: segregation
   version: {{ version }}
 
 source:
-  url: https://github.com/pysal/segregation/archive/v{{ version }}.tar.gz
-  sha256: 0675a429b44497d3ddfa455a3ae9c6d441c3adb3c316b9592b7ea2125942b5ce
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 3e5cb03e883534b1237f9696cd96446f74ceb63d2cd905c299f585c66bbcea2d
 
 build:
   number: 0
@@ -31,8 +31,7 @@ requirements:
     - numba
     - joblib
     - rvlib >=0.0.5
-    - deprecation
-    - pyproj
+    - pyproj >=3
 
 test:
   imports:
