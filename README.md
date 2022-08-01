@@ -152,6 +152,7 @@ Feedstock Maintainers
 =====================
 
 * [@knaaptime](https://github.com/knaaptime/)
+* [@ocefpaf](https://github.com/ocefpaf/)
 * [@renanxcortes](https://github.com/renanxcortes/)
 * [@sjsrey](https://github.com/sjsrey/)
 

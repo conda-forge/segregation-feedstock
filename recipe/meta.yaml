@@ -1,42 +1,51 @@
+{% set name = "segregation" %}
 {% set version = "2.3.1" %}
 
 package:
-  name: segregation
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/pysal/segregation/archive/v{{ version }}.tar.gz
-  sha256: 74123a96e39cfc8c0612f4adbfa31c3fb856488e890a0bb7fd51b49dd3f918ee
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/segregation-{{ version }}.tar.gz
+  sha256: 4da8dfef5aa27556161d6931fdc666c1700dd580c5d838810f1839b440826edf
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
 
 requirements:
   host:
-    - python >=3
     - pip
+    - python >=3.7
   run:
-    - python >=3
-    - pandas
-    - geopandas
-    - matplotlib-base
-    - scikit-learn
-    - seaborn
-    - numpy
-    - scipy
-    - libpysal
-    - tqdm
-    - numba
-    - joblib
-    - rvlib >=0.0.5
     - deprecation
-    - pyproj
+    - geopandas >=0.9
+    - joblib
+    - libpysal
+    - mapclassify
+    - matplotlib-base
+    - numba
+    - numpy
+    - pandas
+    - pip
+    - pygeos
+    - pyproj >=3
+    - python >=3.7
+    - quilt3
+    - rvlib >=0.0.5
+    - scikit-learn >=0.21.3
+    - scipy
+    - seaborn
+    - tqdm
 
 test:
   imports:
     - segregation
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://pysal.org
@@ -56,3 +65,4 @@ extra:
     - renanxcortes
     - sjsrey
     - knaaptime
+    - ocefpaf
