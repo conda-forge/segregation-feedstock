@@ -1,11 +1,11 @@
-About segregation
-=================
+About segregation-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/segregation-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pysal.org
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/segregation-feedstock/blob/main/LICENSE.txt)
 
 Summary: Segregation Measures Framework in PySAL
 
