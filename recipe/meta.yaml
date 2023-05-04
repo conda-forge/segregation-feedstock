@@ -1,5 +1,5 @@
 {% set name = "segregation" %}
-{% set version = "2.3.1" %}
+{% set version = "2.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,37 +7,35 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/segregation-{{ version }}.tar.gz
-  sha256: 4da8dfef5aa27556161d6931fdc666c1700dd580c5d838810f1839b440826edf
+  sha256: 840bba5c81cf52cce62a41f83d5eb34361d19bb2f78498f831c4dc3e83d257d6
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
+    - python >=3.8
+    - setuptools >=61.0
+    - setuptools-scm >=6.2
     - pip
-    - python >=3.7
   run:
+    - python >=3.8
     - deprecation
     - geopandas >=0.9
     - joblib
     - libpysal
     - mapclassify
     - matplotlib-base
-    - numba
     - numpy
     - pandas
-    - pip
-    - pygeos
-    - pyproj >=3
-    - python >=3.7
-    - quilt3
-    - rvlib >=0.0.5
     - scikit-learn >=0.21.3
     - scipy
     - seaborn
     - tqdm
+    - numba
+    - pyproj >=3
 
 test:
   imports:
