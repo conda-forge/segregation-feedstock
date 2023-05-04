@@ -16,28 +16,26 @@ build:
 
 requirements:
   host:
+    - python >=3.8
+    - setuptools >=61.0
+    - setuptools-scm >=6.2
     - pip
-    - python >=3.7
   run:
+    - python >=3.8
     - deprecation
     - geopandas >=0.9
     - joblib
     - libpysal
     - mapclassify
     - matplotlib-base
-    - numba
     - numpy
     - pandas
-    - pip
-    - pygeos
-    - pyproj >=3
-    - python >=3.7
-    - quilt3
-    - rvlib >=0.0.5
     - scikit-learn >=0.21.3
     - scipy
     - seaborn
     - tqdm
+    - numba
+    - pyproj >=3
 
 test:
   imports:
