@@ -11,7 +11,7 @@ Summary: Segregation Measures Framework in PySAL
 
 Development: https://github.com/pysal/segregation
 
-Documentation: http://segregation.readthedocs.io/
+Documentation: https://pysal.org/segregation/
 
 The PySAL segregation module allow users to estimate several segregation measures and perform
 inference for single measures and comparative inference in a concise way.
@@ -151,7 +151,9 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@jGaboardi](https://github.com/jGaboardi/)
 * [@knaaptime](https://github.com/knaaptime/)
+* [@martinfleis](https://github.com/martinfleis/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@renanxcortes](https://github.com/renanxcortes/)
 * [@sjsrey](https://github.com/sjsrey/)
