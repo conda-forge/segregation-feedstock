@@ -1,5 +1,5 @@
 {% set name = "segregation" %}
-{% set version = "2.5.1" %}
+{% set version = "2.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/segregation-{{ version }}.tar.gz
-  sha256: fedd0e16413a1ef111404d18f5af9652cf47ee4a7fdaf1ad15e932b5034e4042
+  sha256: e2a2e580818032f7924b871ee43257cfc684572305df3a9f27ff6e1d647643c6
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
