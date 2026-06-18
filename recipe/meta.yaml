@@ -1,5 +1,5 @@
 {% set name = "segregation" %}
-{% set version = "2.5.4" %}
+{% set version = "2.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/segregation-{{ version }}.tar.gz
-  sha256: 3292c1ffb0175fbe2a49464dd667aa7acbd3884c18ae3fcf2c431e18f2d1abf5
+  sha256: 9e3697e18072dffc3674049eb02e25d199fbdb7712abb5632d664dbd54b6b23e
 
 build:
   noarch: python
@@ -23,18 +23,18 @@ requirements:
   run:
     - python >={{ python_min }}
     - deprecation
-    - geopandas >=0.9
-    - joblib
-    - libpysal
-    - mapclassify
-    - matplotlib-base
-    - numpy
-    - pandas
-    - scikit-learn >=0.21.3
-    - scipy
+    - geopandas >=1.1.0
+    - joblib >=1.5.0
+    - libpysal >=4.12.1
+    - mapclassify >=2.8
+    - matplotlib-base >=3.10
+    - numpy >=2.0.0
+    - pandas >=2.3.0
+    - scikit-learn >=1.5.0
+    - scipy >=1.14.0
     - seaborn
     - tqdm
-    - numba
+    - numba >=0.60
     - pyproj >=3
 
 test:
