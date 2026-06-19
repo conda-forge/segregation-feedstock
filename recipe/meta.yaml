@@ -1,5 +1,6 @@
 {% set name = "segregation" %}
 {% set version = "2.5.5" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
