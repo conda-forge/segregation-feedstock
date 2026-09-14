@@ -1,5 +1,5 @@
 {% set name = "segregation" %}
-{% set version = "2.5.5" %}
+{% set version = "2.6.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/segregation-{{ version }}.tar.gz
-  sha256: 9e3697e18072dffc3674049eb02e25d199fbdb7712abb5632d664dbd54b6b23e
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/segregation-{{ version }}.tar.gz
+  sha256: a7789f7f5d41cb3c28d4277b25dfa3ef1b4c3325f0371a3b7c1526570a41bd85
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - setuptools-scm >=6.2
     - pip
   run:
+    - statsmodels >=0.14.4
     - python >={{ python_min }}
     - deprecation
     - geopandas >=1.1.0
